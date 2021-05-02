@@ -1,5 +1,5 @@
 {
-  "name": "marvel-app-vue2",
+  "name": "book-club-vue2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,9 @@
     "init": "yarn clean && yarn install"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
@@ -25,7 +27,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.32.12",
-    "sass-loader": "^11.0.1",
+    "sass-loader": "10.1.1",
     "vue-cli-plugin-pug": "^2.0.0",
     "vue-template-compiler": "^2.6.11"
   }

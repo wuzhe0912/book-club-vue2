@@ -1,24 +1,7 @@
-# marvel-app-vue2
+# 讀書會使用 Demo
 
-## Project setup
-```
-yarn install
-```
+> `Vue 2.x`版本
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## 功能
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+主要用於線上讀書會講解用的`demo`，這一`repo`仍以維護舊專案為目標，故以`2.x`版本為實作。
