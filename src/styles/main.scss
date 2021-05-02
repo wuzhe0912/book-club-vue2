@@ -67,3 +67,37 @@ input {
   border: 0;
   border-radius: 0;
 }
+
+// share
+h2 {
+  color: $clr-grey-5;
+  text-align: center;
+}
+
+.component-wrapper {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.box {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: all 0.3s linear;
+  background-color: $clr-primary-9;
+  margin-bottom: 1rem;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+    transform: scale(1.02);
+  }
+
+  span {
+    margin-left: 1rem;
+  }
+}

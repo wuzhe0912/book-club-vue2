@@ -1,33 +1,26 @@
 <template lang="pug">
   .home-wrapper
-    h2 讀書會 Demo
+    h2 Vue 2.x
+    h3 API
     .card-wrapper
       article.card(v-for="card in list" :key="card.id")
-        router-link.link(:to="card.id") {{ card.name }}
+        router-link.link(:to="card.id")
+          h4 {{ card.name }}
+    h3 Features
 </template>
 
 <script>
-import Characters from '@/components/Characters';
-
 export default {
   name: 'Home',
-  components: {
-    Characters,
-  },
 
   data() {
     return {
       list: [
         { id: 'props', name: 'Props' },
-        { id: 'shopping', name: 'Vuex - Shopping Cart' },
-        { id: 'shopping', name: 'Vuex - Shopping Cart' },
-        { id: 'shopping', name: 'Vuex - Shopping Cart' },
-        { id: 'shopping', name: 'Vuex - Shopping Cart' },
+        { id: 'shoppingCart', name: 'Shopping Cart ( Vuex )' },
       ],
     };
   },
-
-  methods() {},
 };
 </script>
 
@@ -41,10 +34,9 @@ export default {
   margin: 0 auto 2rem;
   margin-top: 2rem;
 
-  h2 {
+  h3 {
     color: $clr-grey-5;
-    margin-bottom: 2rem;
-    text-align: center;
+    margin: 1.5rem 0;
   }
 }
 
@@ -76,5 +68,9 @@ export default {
   width: 100%;
   height: 100%;
   color: $clr-black;
+
+  h4 {
+    color: $clr-grey-1;
+  }
 }
 </style>
