@@ -35,6 +35,8 @@ export default {
   cursor: pointer;
   box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
   border-radius: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 
   &:hover {
     color: $clr-primary-1;

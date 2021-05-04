@@ -17,7 +17,7 @@ export default {
     return {
       list: [
         { id: 'props', name: 'Props' },
-        { id: 'shoppingCart', name: 'Shopping Cart ( Vuex )' },
+        { id: 'shoppingCart', name: 'Vuex' },
       ],
     };
   },
