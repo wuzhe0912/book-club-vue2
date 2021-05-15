@@ -17,6 +17,7 @@ export default {
     return {
       list: [
         { id: 'props', name: 'Props' },
+        { id: 'routerDemo', name: 'Vue Router' },
         { id: 'shoppingCart', name: 'Vuex' },
       ],
     };
