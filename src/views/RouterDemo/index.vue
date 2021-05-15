@@ -2,6 +2,13 @@
   .component-wrapper
     Title(:title="title")
     .box {{ text }}
+    router-link.box(
+      v-for="node in list"
+      :to="node.id"
+      :key="node.id"
+    ) {{ node.name }}
+    .box
+      router-view
     BackBtn
 </template>
 
@@ -23,6 +30,10 @@ export default {
     return {
       title: 'Vue Router',
       text: '這是 Vue Router 內容',
+      list: [
+        { id: '/routerDemo/id', name: '點擊顯示 id' },
+        { id: '/routerDemo/content', name: '點擊顯示 content' },
+      ],
     };
   },
 };

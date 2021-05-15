@@ -18,7 +18,24 @@ const routes = [
   {
     path: '/routerDemo',
     name: 'RouterDemo',
-    component: () => import('../views/RouterDemo.vue'),
+    component: () => import('../views/RouterDemo'),
+    children: [
+      {
+        path: '',
+        name: 'RouterDemoHome',
+        component: () => import('@/views/RouterDemo/RouterDemoHome.vue'),
+      },
+      {
+        path: 'id',
+        name: 'RouterDemoID',
+        component: () => import('@/views/RouterDemo/RouterDemoID.vue'),
+      },
+      {
+        path: 'content',
+        name: 'RouterDemoContent',
+        component: () => import('@/views/RouterDemo/RouterDemoContent.vue'),
+      },
+    ],
   },
   {
     path: '/shoppingCart',
