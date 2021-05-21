@@ -10,6 +10,7 @@
 > 每次報告均以`10 min`為限。
 
 ### Vue Router
-~~Basic setting 2021/5/9~~
-~~- Nested Routes 2021/5/15
-- Dynamic Route 2021/5/22
+- 2021/5/9：Basic setting
+- 2021/5/15：Nested Routes
+- 2021/5/22：Dynamic Route
+- 2021/5/30：
