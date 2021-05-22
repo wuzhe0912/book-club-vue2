@@ -38,6 +38,12 @@ const routes = [
     ],
   },
   {
+    path: '/dynamic/:sn?', // params, sn => Serial Number 的縮寫，序列號
+    // path: '/dynamic',     // query
+    name: 'Dynamic',
+    component: () => import('../views/Dynamic.vue'),
+  },
+  {
     path: '/shoppingCart',
     name: 'ShoppingCart',
     component: () => import('../views/ShoppingCart.vue'),
