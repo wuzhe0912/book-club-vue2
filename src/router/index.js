@@ -39,8 +39,25 @@ const routes = [
   },
   {
     path: '/routerDemo2',
-    name: 'RouterDemo',
+    name: 'RouterDemo2',
     component: () => import('../views/RouterDemo2'),
+    children: [
+      {
+        path: 'first',
+        name: 'first',
+        component: () => import('@/views/RouterDemo2/RouterDemoFirst.vue'),
+      },
+      {
+        path: 'second',
+        name: 'second',
+        component: () => import('@/views/RouterDemo2/RouterDemoSecond.vue'),
+      },
+      {
+        path: 'third',
+        name: 'third',
+        component: () => import('@/views/RouterDemo2/RouterDemoThird.vue'),
+      },
+    ],
   },
   {
     path: '/dynamic/:sn?', // params, sn => Serial Number 的縮寫，序列號
