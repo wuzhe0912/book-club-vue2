@@ -45,16 +45,16 @@ const routes = [
     name: 'RouterDemo2',
     component: () => import('../views/RouterDemo2'),
     children: [
-      { path: 'first', component: RouterDemoFirst, },
-      { path: 'second', component: RouterDemoSecond, },
-      { path: 'third', component: RouterDemoThird, },
+      { path: 'first', name: 'first', component: RouterDemoFirst, },
+      { path: 'second', name: 'second', component: RouterDemoSecond, },
+      { path: 'third', name: 'third', component: RouterDemoThird, },
       {
         path: 'all',
         name: 'all',
         components: {
-          x: RouterDemoFirst,
-          y: RouterDemoSecond,
-          z: RouterDemoThird,
+          default: RouterDemoFirst,
+          other: RouterDemoSecond,
+          another: RouterDemoThird,
         }
       },
     ],
