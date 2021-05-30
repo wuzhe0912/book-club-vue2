@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import RouterDemoFirst from '@/views/RouterDemo2/RouterDemoFirst.vue';
+import RouterDemoSecond from '@/views/RouterDemo2/RouterDemoSecond.vue';
+import RouterDemoThird from '@/views/RouterDemo2/RouterDemoThird.vue';
 
 Vue.use(VueRouter);
 
@@ -42,20 +45,17 @@ const routes = [
     name: 'RouterDemo2',
     component: () => import('../views/RouterDemo2'),
     children: [
+      { path: 'first', component: RouterDemoFirst, },
+      { path: 'second', component: RouterDemoSecond, },
+      { path: 'third', component: RouterDemoThird, },
       {
-        path: 'first',
-        name: 'first',
-        component: () => import('@/views/RouterDemo2/RouterDemoFirst.vue'),
-      },
-      {
-        path: 'second',
-        name: 'second',
-        component: () => import('@/views/RouterDemo2/RouterDemoSecond.vue'),
-      },
-      {
-        path: 'third',
-        name: 'third',
-        component: () => import('@/views/RouterDemo2/RouterDemoThird.vue'),
+        path: 'all',
+        name: 'all',
+        components: {
+          x: RouterDemoFirst,
+          y: RouterDemoSecond,
+          z: RouterDemoThird,
+        }
       },
     ],
   },

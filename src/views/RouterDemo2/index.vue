@@ -4,8 +4,13 @@
     router-link.box(:to="{name: 'first'}") 顯示 First
     router-link.box(:to="{name: 'second'}") 顯示 Second
     .box(@click="goSecond()") 點擊顯示 Third
+    router-link.box(:to="{name: 'all'}") 顯示全部
     .box(v-if="$route.name !== 'RouterDemo2'")
-      router-view
+      router-view(name="x")
+    .box(v-if="$route.name !== 'RouterDemo2'")
+      router-view(name="y")
+    .box(v-if="$route.name !== 'RouterDemo2'")
+      router-view(name="z")
     BackBtn
 </template>
 
