@@ -12,5 +12,5 @@
 ### Vue Router
 - ~~2021/5/9：Basic setting~~
 - ~~2021/5/15：Nested Routes~~
-- 2021/5/22：Dynamic Route
-- 2021/5/30：
+- ~~2021/5/22：Dynamic Route~~
+- 2021/5/30：Name Routed & Name Views
