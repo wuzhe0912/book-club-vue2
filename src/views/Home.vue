@@ -18,6 +18,7 @@ export default {
       list: [
         { id: 'props', name: 'Props' },
         { id: 'routerDemo', name: 'Vue Router' },
+        { id: 'routerDemo2', name: 'Vue Router2' },
         { id: 'dynamic', name: 'Dynamic' },
         { id: 'shoppingCart', name: 'Vuex' },
       ],

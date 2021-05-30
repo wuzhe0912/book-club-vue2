@@ -38,6 +38,11 @@ const routes = [
     ],
   },
   {
+    path: '/routerDemo2',
+    name: 'RouterDemo',
+    component: () => import('../views/RouterDemo2'),
+  },
+  {
     path: '/dynamic/:sn?', // params, sn => Serial Number 的縮寫，序列號
     // path: '/dynamic',     // query
     name: 'Dynamic',
